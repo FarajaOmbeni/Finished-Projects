@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+    /*DESIGNING THE HEADER*/
+.header{
+    background-color: white;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    height: 7rem;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 88px;
+}
+.navlinks{
+    flex: 1;
+    text-align: right;
+    margin-top: -5%;
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+.navlinks ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13;
+    font-family: 'Akshar', sans-serif;
+}
+.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+.textbox{
+    width: 30%;
+    position: absolute;
+    top: 15%;
+    left: 63%;
+    text-align: right;
+    margin-top: 2%;
+}
+.textbox h4{
+    font-size: 17px;
+    color: rgb(231, 121, 121);
+    font-family: 'Akshar', sans-serif;
+}
+.textbox h4+p{
+    font-size: 12px;
+    color: rgb(231, 121, 121);
+    font-family: 'Akshar', sans-serif;
+}
+
+/*DESIGNING THE ANNOUNCEMENTS BANNER*/
+.clothes{
+    width: 100%;
+    background-color: yellow;
+}
+.shopping{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.category-link{
+    text-decoration: none;
+    font-family: 'Akshar', sans-serif;
+    color: black;
+    
+}
+.category-link:hover{
+    color: green;
+}
+.category-link::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.category-link:hover::after{
+    width: 100%;
+}
+
+/*DESIGNING THE BENEFITS AND OFFERS*/
+
+#slider {
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider{
+    0%{left: 0;}
+    20%{left: 0;}
+    25%{left: -100%;}
+    45%{left: -100%;}
+    50%{left: -200%;}
+    70%{left: -200%;}
+    75%{left: -300%;}
+    95%{left: -300%;}
+    100%{left: -400%;}
+}
+
+/*DESIGNING THE BENEFITS*/
+.benefits-announcement{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+.our-benefits{
+    border: solid;
+    margin-bottom: 20px;
+    border-color: black;
+    background-color: yellow;
+}
+.our-benefits:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.benefits-announcement h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Akshar', sans-serif;
+    color: black;
+}
+.benefits-announcement p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    font-family: 'Akshar', sans-serif;
+}
+.benefits-list{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.benefits-col{
+    flex-basis: 31%;
+    background: pink;
+    border-radius: 100px;
+    margin-bottom: 2%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.benefits-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-family: 'Akshar', sans-serif;
+}
+.benefits-col p{
+    text-align: center;
+    font-weight: 300;
+    margin: 10px 0;
+    font-family: 'Akshar', sans-serif;
+    transition: 0.5s;
+}
+.benefits-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*DESIGNING SHOPPING*/
+.clothes {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+#hot{
+    padding-bottom: 20px;
+    bottom: 50%;
+    font-family: 'Akshar', sans-serif;
+    font-size: 50px;
+    border: solid;
+    border-radius: 10px;
+    background: rgba(226, 0, 0, 0.7);
+}
+.announcement-row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+.clothes-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.clothes-col img{
+    width: 100%;
+    display: block;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.layer{
+    background:  transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    text-align: center;
+}
+.layer:hover{
+    background: rgba(226, 0, 0, 0.7);
+}
+.layer h1{
+    width: 100%;
+    font-weight: 500;
+    color: yellow;
+    font-size: 50px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    border: solid;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.5s;
+    font-family: 'Akshar', sans-serif;
+}
+.layer:hover h1{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*ADDING PRODUCTS*/
+.products{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: auto;
+    background-color: white;
+}
+#shop-products{
+    text-align: center;
+    padding-bottom: 20px;
+    bottom: 50%;
+    font-family: 'Akshar', sans-serif;
+    font-size: 50px;
+    border: solid;
+    border-radius: 10px;
+    background: rgba(226, 0, 0, 0.7);
+}
+.products-col{
+    width: 30%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+.products-col img{
+    width: 100%;
+}
+.products-col h4,p,a{
+    font-family: 'Akshar', sans-serif;
+}
+.products-col h5{
+    background: rgba(226, 0, 0, 0.7);
+    padding: 5px;
+    color: rgba(127, 255, 7, 0.473);
+}
+.products-col a{
+    text-decoration: none;
+}
+.products-col h5:hover{
+    background: peru;
+}
+
+
+
+/*FOOTER*/
+.footer{
+    margin-top: 115%;
+    background-color: peru
+}
+.footer h3,a,label,p{
+    color: black;
+    text-decoration: none;
+    font-family: 'Akshar', sans-serif;
+}
+.btn{
+    background: black;
+    color: white;
+    border: transparent;
+    padding: 3px;
+}
+.btn:hover{
+    background-color: grey;
+}
+.footer ul{
+    list-style: none;
+}
+.footer a:hover{
+    color: grey;
+}
+.social-links{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.quick-links{
+    float: left;
+    width: 25%;
+}
+.help{
+    float: left;
+    width: 25%;
+}
+.newsletter{
+    float: left;
+    width: 25%;
+}
+.feedback{
+    float: left;
+    width: 25%;
+}
+.copyright{
+    text-align: center;
+    color: yellow;
+    padding-top: 350px;
+}

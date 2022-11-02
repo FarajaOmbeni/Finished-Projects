@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.shopping{
+    background-color: yellow;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.category-link{
+    text-decoration: none;
+    font-family: 'Akshar', sans-serif;
+    color: black;
+    
+}
+.shopping h1{
+    font-weight: bold;
+    font-family: 'Akshar', sans-serif;
+}
+
+
+.addcat label{
+    font-family: 'Akshar', sans-serif;
+}
+.catid{
+    line-height: 20px;
+    width: 200px;
+    margin-left: 72px;
+}
+.catname{
+    line-height: 20px;
+    width: 200px;
+    margin-left: 50px;
+}
+.isdeleted{
+    line-height: 20px;
+    width: 200px;
+    margin-left: 85px;
+}
+.btn{
+    background: gray;
+    color: black;
+    font-family: 'Akshar', sans-serif;
+    font-weight: bold;
+    margin-left: 130px;
+    padding: 10px;
+}
+.btn:hover{
+    background: white;
+}
+
+.form{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: yellow;
+    border-radius: 10px;
+    padding: 50px;
+
+}

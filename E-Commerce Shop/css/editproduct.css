@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+/*DESIGNING THE HEADER*/
+.header{
+    background-color: white;
+    justify-content: space-between;
+    z-index: 4;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+}
+.shoplogo img{
+    width: 150px;
+}
+.navlinks ul{
+    list-style: none;
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navlinks ul a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Akshar', sans-serif;
+}
+.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: flex;
+    margin: auto;
+    transition: 0.5s;
+}
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+
+.shopping{
+    background-color: yellow;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.category-link{
+    text-decoration: none;
+    font-family: 'Akshar', sans-serif;
+    color: black;
+    
+}
+.shopping h1{
+    font-weight: bold;
+    font-family: 'Akshar', sans-serif;
+}
+.input{
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+.input:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+.search-form{
+    position: absolute;
+    left: 29.5%;
+    background: yellow;
+    top: 30%;
+    padding: 25px;
+    margin-top: 20px;
+    width: 500px;
+    border-radius: 10px;
+ 
+}
+
+.form{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: yellow;
+    border-radius: 10px;
+    padding: 50px;
+    margin-top: 150px;
+
+}
+.btn{
+    width: 100%;
+    background: gray;
+    color: black;
+    font-family: 'Akshar', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+.btn:hover{
+    background: yellowgreen;
+}
+
+
+
+.footer{
+    margin-top: 115%;
+    background-color: peru
+}
+.footer h3,a,label,p{
+    color: black;
+    text-decoration: none;
+    font-family: 'Akshar', sans-serif;
+}
+.footer ul{
+    list-style: none;
+}
+.footer a:hover{
+    color: grey;
+}
+.social-links{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.quick-links{
+    float: left;
+    width: 25%;
+}
+.help{
+    float: left;
+    width: 25%;
+}
+.newsletter{
+    float: left;
+    width: 25%;
+}
+.feedback{
+    float: left;
+    width: 25%;
+}
+.copyright{
+    text-align: center;
+    color: yellow;
+    padding-top: 350px;
+}

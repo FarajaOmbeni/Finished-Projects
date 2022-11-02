@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+/*DESIGNING THE HEADER*/
+.header{
+    background-color: white;
+    justify-content: space-between;
+    z-index: 4;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+}
+.shoplogo img{
+    width: 150px;
+}
+.navlinks ul{
+    list-style: none;
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navlinks ul a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Akshar', sans-serif;
+}
+.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: flex;
+    margin: auto;
+    transition: 0.5s;
+}
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+
+
+/*LEFT NAVBAR*/
+.leftnav{
+    float: left;
+    width: 30%;
+    padding-top: 50px;
+}
+.leftnav h5{
+    padding-left: 10%;
+}
+.leftnav a input{
+    color: black;
+    font-family: 'Akshar', sans-serif;
+    width: 30%;
+    margin-left: 20px ;
+}
+.leftnav a input:hover{
+    background-color: pink;
+}
+
+/*ADDING PRODUCTS*/
+.products{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: auto;
+    background-color: white;
+}
+#shop-products{
+    text-align: center;
+    padding-bottom: 20px;
+    bottom: 50%;
+    font-family: 'Akshar', sans-serif;
+    font-size: 50px;
+    border: solid;
+    border-radius: 10px;
+    background: rgba(226, 0, 0, 0.7);
+}
+.products-col{
+    width: 30%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+.products-col img{
+    width: 100%;
+}
+.products-col h4,p,a{
+    font-family: 'Akshar', sans-serif;
+}
+.products-col h5{
+    background: rgba(226, 0, 0, 0.7);
+    padding: 5px;
+    color: rgba(127, 255, 7, 0.473);
+}
+.products-col a{
+    text-decoration: none;
+}
+.products-col h5:hover{
+    background: peru;
+}
+
+
+.footer{
+    margin-top: 115%;
+    background-color: peru
+}
+.footer h3,a,label,p{
+    color: black;
+    text-decoration: none;
+    font-family: 'Akshar', sans-serif;
+}
+.btn{
+    background: black;
+    color: white;
+    border: transparent;
+    padding: 3px;
+}
+.btn:hover{
+    background-color: grey;
+}
+.footer ul{
+    list-style: none;
+}
+.footer a:hover{
+    color: grey;
+}
+.social-links{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.quick-links{
+    float: left;
+    width: 25%;
+}
+.help{
+    float: left;
+    width: 25%;
+}
+.newsletter{
+    float: left;
+    width: 25%;
+}
+.feedback{
+    float: left;
+    width: 25%;
+}
+.copyright{
+    text-align: center;
+    color: yellow;
+    padding-top: 350px;
+}
+
